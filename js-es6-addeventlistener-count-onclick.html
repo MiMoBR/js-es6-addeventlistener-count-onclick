@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="theButton">How much this button was </button>
+
+	<button id="theButton2">How much this button was 2 </button>
+</body>
+<script>
+	const el = document.getElementById("theButton");
+
+	let counter = 0;
+
+	el.addEventListener("click", ()=>{
+		el.innerText = "Clicked "+ ++counter;
+	});
+
+	const el2 = document.getElementById("theButton2");
+
+	let counter2 = 0;
+
+	el2.addEventListener("click", ()=>{
+		el2.innerText = "Clicked "+ ++counter2;
+	},{once:true});
+</script>
+</html>
